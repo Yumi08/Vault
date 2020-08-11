@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+cd "$(dirname "$0")"
+
 if [ ! -d Data/ ] ; then
     echo "ERROR: Data directory not present!"
     exit 1

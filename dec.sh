@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+cd "$(dirname "$0")"
+
 if [ ! -f Data.tar.gz.gpg ] ; then
     echo "ERROR: Data.tar.gz.gpg is not present!"
     exit 1
